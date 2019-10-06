@@ -9,18 +9,17 @@ npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+quasar dev -m cordova -T android
 ```
 
-### Lint the files
-```bash
-npm run lint
-```
+### Prints
 
-### Build the app for production
-```bash
-quasar build
-```
+![N|Solid](https://github.com/patrickmonteiro/quasar-cordova-fingerprint/blob/master/docs/fp1.jpeg?raw=true)
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+![N|Solid](https://github.com/patrickmonteiro/quasar-cordova-fingerprint/blob/master/docs/fp2.jpeg?raw=true)
+
+![N|Solid](https://github.com/patrickmonteiro/quasar-cordova-fingerprint/blob/master/docs/fp3.jpeg?raw=true)
+
+![N|Solid](https://github.com/patrickmonteiro/quasar-cordova-fingerprint/blob/master/docs/fp4.jpeg?raw=true)
+
+![N|Solid](https://github.com/patrickmonteiro/quasar-cordova-fingerprint/blob/master/docs/fp5.jpeg?raw=true)
