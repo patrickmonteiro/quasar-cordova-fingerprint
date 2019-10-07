@@ -1,10 +1,39 @@
 # Quasar Cordova Fingerprint (quasar-cordova-fingerprint)
 
-Quasar + Cordova Fingerprint Plugin
+🔒👍📱 Quasar + Cordova Fingerprint Plugin
+
+## Plugin Used
+
+[cordova-plugin-fingerprint-aio](https://www.npmjs.com/package/cordova-plugin-fingerprint-aio)
+
 
 ## Install the dependencies
 ```bash
 npm install
+```
+
+### Boot **fingerprint.js**
+
+```javascript
+export default async ({ Vue }) => {
+  Vue.prototype.$fingerPrint = (text) => {
+    return new Promise((resolve, reject) => {
+      window.Fingerprint.isAvailable((suc) => {
+        window.Fingerprint.show({
+          clientId: 'fingerprintId',
+          clientSecret: 'o7aoOMYUbyxaD23oFAnJ',
+          disableBackup: true
+        }, (suc) => {
+          resolve(suc)
+        }, (err) => {
+          reject(err)
+        })
+      }, () => {
+        reject(false)
+      })
+    })
+  }
+}
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
